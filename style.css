@@ -1,6 +1,11 @@
+.navbar {
+  position: relative;
+  z-index: 1;
+}
 .jumbotron {
   padding-top: 6rem;
-  background-color: #343a40;
+  background-image: url(img/bg1r3.jpg);
+  background-size: cover;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -15,4 +20,26 @@ section {
 .navbar-brand {
   font-family: "Viga";
   font-size: 32;
+}
+
+@media (min-width: 992px) {
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+  }
+
+  .navbar-brand,
+  .nav-link {
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7);
+  }
 }
