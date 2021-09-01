@@ -1,6 +1,7 @@
 .jumbotron {
   padding-top: 6rem;
   background-color: #343a40;
+  font-family: "Quicksand", sans-serif;
 }
 
 #projects {
@@ -9,4 +10,9 @@
 
 section {
   padding-top: 5rem;
+}
+
+.navbar-brand {
+  font-family: "Viga";
+  font-size: 32;
 }
