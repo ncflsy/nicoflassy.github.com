@@ -21,14 +21,6 @@ section {
   font-family: "Viga";
   font-size: 32;
 }
-
-.btn,
-.btn:hover,
-.btn:active,
-.btn:visited {
-  background-color: rgba(0, 0, 255, 0) !important;
-}
-
 @media (min-width: 992px) {
   .nav-link:hover::after {
     content: "";
@@ -48,5 +40,12 @@ section {
   .nav-link {
     color: white;
     text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7);
+  }
+
+  .btn,
+  .btn:hover,
+  .btn:active,
+  .btn:visited {
+    background-color: rgba(0, 0, 255, 0) !important;
   }
 }
