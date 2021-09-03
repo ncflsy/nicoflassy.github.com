@@ -1,19 +1,51 @@
+.navbar {
+  position: relative;
+  z-index: 1;
+}
 .jumbotron {
-  padding: 2rem 1rem;
-  background-color: bisque;
-}
-.row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  padding-top: 6rem;
+  background-image: url(img/bg1r.jpg);
+  background-size: cover;
+  font-family: "Quicksand", sans-serif;
 }
 
-.col-2 {
-  min-width: 300px;
+#projects {
+  background-color: #343a40;
 }
 
-.col-2 img {
-  max-width: 100%;
-  padding: 50px 0;
+section {
+  padding-top: 5rem;
+}
+
+.navbar-brand {
+  font-family: "Viga";
+  font-size: 32;
+}
+@media (min-width: 992px) {
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+  }
+
+  .navbar-brand,
+  .nav-link {
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7);
+  }
+
+  .btn,
+  .btn:hover,
+  .btn:active,
+  .btn:visited {
+    background-color: rgba(0, 0, 255, 0) !important;
+  }
 }
