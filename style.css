@@ -4,13 +4,16 @@
 }
 .jumbotron {
   padding-top: 6rem;
-  background-image: url(img/bg1r.jpg);
+  background-image: url(img/bga2-dark.jpg);
   background-size: cover;
   font-family: "Quicksand", sans-serif;
 }
 
 #projects {
   background-color: #343a40;
+}
+#projects .container .row .col-md-4:hover {
+  transform: translateY(-8px);
 }
 
 section {
