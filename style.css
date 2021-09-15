@@ -3,21 +3,42 @@
   z-index: 1;
 }
 .jumbotron {
-  padding-top: 6rem;
+  padding-top: 15rem;
   background-image: url(img/bga2-dark.jpg);
   background-size: cover;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  margin-top: -230px;
+}
+
+.jumbotron .container .row .display-4 {
+  color: #dcdcdc;
 }
 
 #projects {
-  background-color: #343a40;
+  background-color: #1c1c1c;
 }
 #projects .container .row .col-md-4:hover {
   transform: translateY(-8px);
 }
 
+#projects .container .row .col-3 h2 {
+  color: #dcdcdc;
+  font-family: "Chau Philomene One", sans-serif;
+  margin-top: 5px;
+}
+
+#contact .container .row .col-3 h2 {
+  color: #646a74;
+  font-family: "Chau Philomene One", sans-serif;
+}
+
 section {
   padding-top: 5rem;
+}
+
+#about .container .row .col-3 h2 {
+  font-family: "Chau Philomene One", sans-serif;
 }
 
 .navbar-brand {
@@ -51,4 +72,8 @@ section {
   .btn:visited {
     background-color: rgba(0, 0, 255, 0) !important;
   }
+}
+
+footer p {
+  color: #dcdcdc;
 }
