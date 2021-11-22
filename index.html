@@ -1,319 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<!--menu bar-->
+<div id="menu-bars" class="fas fa-bars"></div>
+<!--Header-->    
+<header>
+    <a href="#" class="logo"><span>Nico</span> Flassy</a>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
-    <!--Bootsrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-    <!--AOS-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css" />
-    <!--Font awesome-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <!--Google Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Viga&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
-    <title>My Website | Nico Flassy</title>
-  </head>
-  <body id="home">
-  
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">  <img src="img/Nico.jpg" alt="Nico Flassy" width="40" class="rounded-circle img-thumbnail" data-aos="fade-in" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Kontak</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#service">service</a>
+        <a href="#experience">experience</a>
+        <a href="portofolio">portfolio</a>
+        <a href="contact">contact</a>
     </nav>
-    <!--Akhir Navbar-->
-    <!--Jumbotron-->
-    <section class="jumbotron text-center text-white">
-      <div class="container">
-        <div class="row  justify-content-center">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_h9dffnuy.json"  
-        background="transparent"  
-        speed="1"  
-        style="width: 300px; height: 300px;"  
-        loop 
-        autoplay></lottie-player>
-      </div>
-      <div class="row">
-        <h1 class="display-4" data-aos="fade-in"><b>Nico Flassy</b></h1>
-        <p class="lead" data-aos="fade-in">Manusia | Penafas Handal</p>
-      </div>
-      </div>
-      <!--Icon icon-->
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <!--Button Like-->
-          <button type="button" class="btn" style="color: #b37cff"><i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i></button>
-          <!--Button Instagram-->
-          <a href="https://www.instagram.com/nicoflsy10">
-            <button type="button" class="btn" style="color: #e25059"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></button
-          ></a>
-          <!--Button Telegram-->
-          <a href="https://t.me/ncflsy">
-            <button type="button" class="btn" style="color: #2fa6d9" ;><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></button
-          ></a>
-        </div>
-      </div>
-      <!--Button Kirim Pesan-->
-      <div class="row mt-3">
-        <a class="col">
-         <a href="#contact"><button type="button" class="btn btn-primary" style="color: rgb(245, 245, 245)"><span>Kirim Pesan</span></button></a>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,256L48,256C96,256,192,256,288,240C384,224,480,192,576,192C672,192,768,224,864,229.3C960,235,1056,213,1152,202.7C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!--Akhir jumbotron-->
-    <!--about-->
-    <section id="about">
-      <div class="container">
-        <!--baris 1-->
-        <div class="row text-center mb-3 justify-content-center">
-          <div class="col-3" style="padding-top: -25px;">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-              <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_16MhZz.json"  
-              background="transparent"  
-              speed="3"  
-              style="width: 100px; height: 100px;"  
-              loop 
-              autoplay></lottie-player>
-          </div>
-          <div class="col-3" data-aos="fade-up" data-aos-offset="150" style="padding-top: 27px; color: #646a74;">
-            <h2>Tentang</h2>
-          </div>
-        </div>
-        <!--baris 2-->
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-up" data-aos-offset="200" data-aos-duration="700">
-            <!--Animasi About-->
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_138qcknv.json" 
-            background="transparent" 
-            speed="1" 
-            style="width: 300px; height: 300px" 
-            loop
-            autoplay></lottie-player>
-          </div>
-          <div class="box col-md-4" data-aos="fade-up" data-aos-offset="200" data-aos-duration="400" style=" width: 300px; height: 300px; align-items:center; color:#646a74 ;" >
-            <p>Media untuk menyalurkan kegabutan dengan membuat project-project website static sederhana</p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#1c1c1c"
-          fill-opacity="1"
-          d="M0,256L48,256C96,256,192,256,288,240C384,224,480,192,576,192C672,192,768,224,864,229.3C960,235,1056,213,1152,202.7C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!--End about-->
-    <!--project-->
-    <section id="projects">
-      <div class="container">
-        <class class="row mb-4 text-white justify-content-center ">
-          <div class="col-3" style="margin-right: 14px;">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_k86wxpgr.json"  
-            background="transparent"  
-            speed="1"  
-            style="width: 100px; height: 100px;"  
-            loop 
-            autoplay></lottie-player>
-          </div>
-          <div class="col-3" style="padding-top: 14px;">
-            <h2>
-              Project Sederhana
-            </h2>
-          </div>
-        </class>
-        <div class="row justify-content-center">
-          <!--img 1-->
-          
-          <div class="col-md-4 mb-3" data-aos="zoom-in-right" data-aos-duration="700">
-            
-            <div class="card">
-              <a href="https://ncflsy.github.io/nicoflassy.github.com/">
-              <img src="img/project1.png" class="card-img-top" alt="project1" />
-            </a>
-              <div class="card-body">
-                <p class="card-text">Yup, Project ini adalah website yang sedang kalian kunjungi. Semua project-project website sederhana yang dibuat akan ditampilkan pada website ini.</p>
-              </div>
-            </div>
-          </div>
-        
-          <!--img 2-->
-          <div class="col-md-4 mb-3" data-aos="zoom-in-down" data-aos-duration="700">
-            <div class="card">
-              <img src="img/project2.png" class="card-img-top" alt="mtb2"/>
-              <div class="card-body">
-                <p class="card-text">On Proggres.</p>
-              </div>
-            </div>
-          </div>
-          <!--img 3-->
-          <div class="col-md-4 mb-3" data-aos="zoom-in-left" data-aos-duration="700">
-            <div class="card">
-              <img src="img/p3.jpg" class="card-img-top" alt="mtb3" />
-              <div class="card-body">
-                <p class="card-text">Coming soon.</p>
-              </div>
-            </div>
-          </div>
-          <!--img 4-->
-          <div class="col-md-4 mb-3" data-aos="zoom-out-right" data-aos-duration="700">
-            <div class="card">
-              <img src="img/p4.jpg" class="card-img-top" alt="mtb4" />
-              <div class="card-body">
-                <p class="card-text">Coming soon.</p>
-              </div>
-            </div>
-          </div>
-          <!--img 5-->
-          <div class="col-md-4 mb-3" data-aos="zoom-out-left" data-aos-duration="700" s>
-            <div class="card">
-              <img src="img/p5.jpg" class="card-img-top" alt="mtb5" />
-              <div class="card-body">
-                <p class="card-text">Coming soon.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,288L40,277.3C80,267,160,245,240,245.3C320,245,400,267,480,272C560,277,640,267,720,256C800,245,880,235,960,224C1040,213,1120,203,1200,213.3C1280,224,1360,256,1400,272L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!--endproject-->
-    <!--Contact-->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center justify-content-center">
-          <div class="col-3" style="padding-top: -16px; padding-left: 35px;">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_mwawjro9.json"  
-            background="transparent"  
-            speed="1"  
-            style="width: 70px; height: 70px;"  
-            loop autoplay></lottie-player>
-          </div>
-          <div class="col-3" style="padding-top: 16px; padding-right: 103px;">
-            <h2>Kontak</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Sukses!</strong> Pesanmu telah terkirim
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <form name="pesan-kontak-form">
-              <!--Nama-->
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
-                <input type="name" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="Masukan nama"/>
-              </div>
-              <!--Pesan-->
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan" placeholder="Kirim pesan secara pribadi"></textarea>
-              </div>
-              <button type="submit" class="btn-primary btn-kirim text-black">Kirim</button>
-              <button class="btn-primary btn-loading d-none" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#1c1c1c"
-          fill-opacity="1"
-          d="M0,224L34.3,229.3C68.6,235,137,245,206,256C274.3,267,343,277,411,250.7C480,224,549,160,617,149.3C685.7,139,754,181,823,202.7C891.4,224,960,224,1029,218.7C1097.1,213,1166,203,1234,202.7C1302.9,203,1371,213,1406,218.7L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!--End Contact-->
-    <!--Footer-->
-    <footer class="text-white text-center pb-5" style="background-color: #1c1c1c">
-      <p>Copyright 2021 | Created by Nico Flassy <i class="bi bi-emoji-smile"></i> <i class="bi bi-hand-thumbs-up"></i></p>
-    </footer>
-    <!--Akhir Footer-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbxdzNN_wp0rT0W_9EL4wYmQ6dZgVJt7xI5vM9fS8uZNxN6E7HgrNB8qhY6IhJibRX4p/exec";
-      const form = document.forms["pesan-kontak-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        //ketika tombol submit diklik
-        //tampilkan tombol loading hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
+    <div class="follow">
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-telegram"></a>
+    </div>
+</header>
+    
 
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            //tampilakntombol kirim, hilangkan tombol loading
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            //tampilkan alert
-            myAlert.classList.toggle("d-none");
-            //reset form
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
 </html>

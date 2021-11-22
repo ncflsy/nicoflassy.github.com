@@ -1,79 +1,86 @@
-.navbar {
-  position: relative;
-  z-index: 1;
-}
-.jumbotron {
-  padding-top: 15rem;
-  background-image: url(img/bga2-dark.jpg);
-  background-size: cover;
-  font-family: "Open sans", sans-serif;
-  font-weight: 400;
-  margin-top: -230px;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+:root {
+  --yellow: #3b8686;
 }
 
-.jumbotron .container .row .display-4 {
-  color: #dcdcdc;
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
 }
 
-#projects {
-  background-color: #1c1c1c;
-}
-#projects .container .row .col-md-4:hover {
-  transform: translateY(-8px);
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
-#projects .container .row .col-3 h2 {
-  color: #dcdcdc;
-  font-family: "Chau Philomene One", sans-serif;
-  margin-top: 5px;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 35rem;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column;
+  text-align: center;
 }
 
-#contact .container .row .col-3 h2 {
-  color: #646a74;
-  font-family: "Chau Philomene One", sans-serif;
+header .logo {
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #fff4;
+  color: #fff;
 }
 
-section {
-  padding-top: 5rem;
+header span {
+  color: var(--yellow);
 }
 
-#about .container .row .col-3 h2 {
-  font-family: "Chau Philomene One", sans-serif;
+header .navbar a {
+  display: block;
+  color: #fff;
+  margin: 2rem 0;
+  font-size: 2rem;
 }
 
-.navbar-brand {
-  font-family: "Viga";
-  font-size: 32;
-}
-@media (min-width: 992px) {
-  .nav-link:hover::after {
-    content: "";
-    display: block;
-    border-bottom: 3px solid #0b63dc;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 5px;
-    margin-bottom: -8px;
-  }
-
-  .jumbotron {
-    margin-top: -75px;
-  }
-
-  .navbar-brand,
-  .nav-link {
-    color: white;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7);
-  }
-
-  .btn,
-  .btn:hover,
-  .btn:active,
-  .btn:visited {
-    background-color: rgba(0, 0, 255, 0) !important;
-  }
+header .navbar a:hover {
+  letter-spacing: 0.2rem;
+  color: var(--yellow);
 }
 
-footer p {
-  color: #dcdcdc;
+header .follow a {
+  color: #fff;
+  margin: 0.7rem;
+  font-size: 2.5rem;
+}
+
+header .follow a:hover {
+  color: var(--yellow);
+}
+
+#menu-bars {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10000;
+  background: var(--yellow);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 3rem;
+  cursor: pointer;
 }
