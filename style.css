@@ -16,9 +16,34 @@
   transition: all 0.2s linear;
 }
 
+body {
+  padding-left: 30rem;
+  background: #79bd9a;
+}
+
+section {
+  padding: 1rem 15%;
+  min-height: 100vh;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  background: var(--yellow);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background: #111;
+  letter-spacing: 0.2rem;
 }
 
 header {
@@ -83,4 +108,76 @@ header .follow a:hover {
   padding: 1rem 1.5rem;
   font-size: 3rem;
   cursor: pointer;
+  display: none;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home .image {
+  flex: 1 1 40rem;
+}
+
+.home .image img {
+  width: 100%;
+}
+
+.home .content {
+  flex: 1 1 40rem;
+}
+
+.home .content .hi {
+  font-size: 2rem;
+  color: #106191;
+}
+
+.home .content h3 {
+  font-size: 4rem;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.home .content h3 span {
+  font-size: 4rem;
+  color: #0b486b;
+  text-transform: uppercase;
+}
+
+.home .content .info {
+  font-size: 2.5rem;
+  color: #111;
+  padding: 0.5rem 0;
+}
+
+.home .content .text {
+  font-size: 1.5rem;
+  color: rgb(87, 86, 86);
+  padding: 0.5rem 0;
+}
+
+/*media untuk hp*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  #menu-bars {
+    display: initial;
+  }
+
+  header {
+    left: -120%;
+  }
+
+  header.active {
+    left: 0%;
+  }
 }
