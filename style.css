@@ -2,6 +2,7 @@
 
 :root {
   --yellow: #3b8686;
+  --blue: #0b486b;
 }
 
 * {
@@ -22,7 +23,7 @@ body {
 }
 
 section {
-  padding: 1rem 15%;
+  padding: 1rem 10%;
   min-height: 100vh;
 }
 
@@ -35,15 +36,28 @@ html {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.8rem 3rem;
-  background: var(--yellow);
+  background: var(--blue);
   color: #fff;
   cursor: pointer;
   font-size: 1.7rem;
+  border-radius: 3rem;
 }
 
 .btn:hover {
   background: #111;
   letter-spacing: 0.2rem;
+}
+
+.heading {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.heading span {
+  color: var(--blue);
+  text-transform: uppercase;
 }
 
 header {
@@ -159,6 +173,332 @@ header .follow a:hover {
   padding: 0.5rem 0;
 }
 
+/*about*/
+.about .row-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.about .row-1 .image {
+  flex: 1 1 25rem;
+}
+
+.about .row-1 .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 1rem solid #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.about .row-1 .content {
+  flex: 1 1 50rem;
+}
+
+.about .row-1 .content h3 {
+  color: #333;
+  font-size: 3.5rem;
+}
+
+.about .row-1 .content p {
+  color: #666;
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+}
+
+.about .row-1 .content .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.about .row-1 .content .box-container .box {
+  flex: 1 1 20rem;
+}
+
+.about .row-1 .content .box-container .box span {
+  color: var(--yellow);
+}
+
+.about .row-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.about .row-2 .skills {
+  flex: 1 1 40rem;
+}
+
+.about .row-2 .skills .progress {
+  padding: 1rem 0;
+}
+
+.about .row-2 .skills .progress h3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  font-size: 1.7rem;
+  color: #111;
+  font-weight: 400;
+}
+
+.about .row-2 .skills .progress .bar {
+  width: 100%;
+  background: #ccc;
+  overflow: hidden;
+  height: 1rem;
+  border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress .bar span {
+  display: block;
+  height: 100%;
+  background: var(--yellow);
+}
+
+.about .row-2 .skills .progress:nth-child(1) .bar span {
+  width: 85%;
+}
+.about .row-2 .skills .progress:nth-child(2) .bar span {
+  width: 80%;
+}
+.about .row-2 .skills .progress:nth-child(3) .bar span {
+  width: 82%;
+}
+.about .row-2 .skills .progress:nth-child(4) .bar span {
+  width: 83%;
+}
+
+.about .row-2 .box-container {
+  flex: 1 1 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-left: 3rem;
+}
+
+.about .row-2 .box-container .box {
+  flex: 1 1 15rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.about .row-2 .box-container .box h3 {
+  color: var(--blue);
+  font-size: 3rem;
+}
+
+.about .row-2 .box-container .box p {
+  color: #666;
+  font-size: 1.7rem;
+}
+
+/*sevice*/
+.service .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.service .box-container .box {
+  flex: 1 1 30rem;
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.5rem 1rem;
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.service .box-container .box i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2.5rem;
+  color: #fff;
+  background: var(--yellow);
+  border-radius: 50%;
+}
+
+.service .box-container .box h3 {
+  color: #444;
+  font-size: 2.2rem;
+  padding-top: 1rem;
+}
+
+.service .box-container .box p {
+  color: #444;
+  font-size: 1.7rem;
+  padding-top: 0.5rem;
+}
+
+/*project*/
+.projects .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.projects .box-container .box {
+  flex: 1 1 30rem;
+  height: 25rem;
+  position: relative;
+  overflow: hidden;
+  border: 0.5rem solid #cdeeee;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.1);
+  background: #cdeeee;
+}
+
+.projects .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.projects .box-container .box:hover img {
+  height: 82%;
+  width: 82%;
+}
+
+.projects .box-container .box h3 {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+  font-size: 2.5rem;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.projects .box-container .box .icons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.projects .box-container .box .icons a {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: #333;
+  font-size: 1.7rem;
+  line-height: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.projects .box-container .box .icons a:hover {
+  background: var(--yellow);
+  color: #fff;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact .row form {
+  flex: 1 1 55rem;
+  background: #cdeeee;
+  padding: 0 2rem;
+  box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.contact .row form .box {
+  width: 100%;
+  border-bottom: 0.1rem solid #333;
+  color: #333;
+  text-transform: none;
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.contact .row form textarea {
+  width: 100%;
+  border-bottom: 0.1rem solid #333;
+  color: #333;
+  text-transform: none;
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.contact .row form .box:focus,
+.contact .row form textarea:focus {
+  border-color: var(--yellow);
+}
+
+.contact .row form .box::placeholder,
+.contact .row form textarea::placeholder {
+  text-transform: capitalize;
+  padding: 0.5rem;
+}
+
+.contact .row form textarea {
+  height: 20rem;
+  resize: none;
+}
+
+.contact .row form textarea {
+  height: 20rem;
+  resize: none;
+}
+
+.contact .row form .btn {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.contact .mywebsite {
+  width: 100%;
+  height: 120px;
+  margin-top: 2rem;
+  background-image: url("../img/bgwebsite.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .mywebsite p {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: calibri;
+  font-weight: bold;
+  margin-top: 4rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact .mywebsite .btn {
+  margin-bottom: 4.5rem;
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  font-family: calibri;
+  font-size: 15px;
+}
+
 /*media untuk hp*/
 @media (max-width: 991px) {
   html {
@@ -179,5 +519,13 @@ header .follow a:hover {
 
   header.active {
     left: 0%;
+  }
+
+  .about .row-2 .box-container {
+    margin-left: 0rem;
+  }
+
+  footer {
+    margin-top: -140px;
   }
 }
