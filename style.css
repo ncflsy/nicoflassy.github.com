@@ -6,6 +6,8 @@
   --white: #fff;
   --whitewash: #ebeced;
   --orange: #e37222;
+  --aliceblue: #f0f8ff;
+  --ivory: #fffff0;
 }
 
 * {
@@ -118,8 +120,8 @@ header .follow a:hover {
   top: 1rem;
   right: 1rem;
   z-index: 10000;
-  background: var(--yellow);
-  color: #fff;
+  background: #dd9d6f;
+  color: var(--black);
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
   font-size: 3rem;
@@ -132,6 +134,7 @@ header .follow a:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 1.5rem;
+  background-color: var(--aliceblue);
 }
 
 .home .image {
@@ -176,6 +179,11 @@ header .follow a:hover {
 }
 
 /*about*/
+
+.about {
+  background-color: var(--ivory);
+}
+
 .about .row-1 {
   display: flex;
   flex-wrap: wrap;
@@ -346,6 +354,10 @@ header .follow a:hover {
 }
 
 /*project*/
+.projects {
+  background-color: var(--aliceblue);
+}
+
 .projects .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -412,6 +424,9 @@ header .follow a:hover {
   color: #fff;
 }
 
+.contact {
+  background-color: var(--ivory);
+}
 .contact .row {
   display: flex;
   flex-wrap: wrap;
